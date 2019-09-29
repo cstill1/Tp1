@@ -3,35 +3,35 @@
 <head>
   <meta charset="utf-8">
   <title>Tp1 - Petit formulaire des familles</title>
-  <link rel="stylesheet/less" type="text/css" href="styles.less" />
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
 </head>
 <body>
     
-    <form action="" method="get" id="frm_infopersos">
+    <form onsubmit="test.onSubmit()" id="frm_infopersos">
         <fieldset>
-            <legend>Test</legend>>
+            <legend>Informations</legend>
             <label for="name">Nom de famille</label>
-            <input type="text" id="name" >
+            <input type="text" class="input" id="name" >
 
             <label for="firstname">Prénom</label>
-            <input type="text" id="firstname" >
+            <input type="text" class="input"id="firstname" >
 
             <label for="address">Adresse</label>
-            <input type="text" id="address" >
+            <input type="text" id="address" class="input" >
 
             <label for="cp">Code postal</label>
-            <input type="text" id="cp" >
+            <input type="text" id="cp" class="input">
 
             <label for="city">Ville</label>
-            <input type="text" id="city" >
+            <input type="text" id="city" class="input">
 
             <label for="phone">Téléphone</label>
-            <input type="text" id="phone" >
+            <input type="text" id="phone" class="input" >
 
             <label for="email">Email</label>
-            <input type="text" id="email" >
+            <input type="text" id="email" class="input">
 
             <label for="civility">Civilité</label>
             <select id="civility">
@@ -40,16 +40,20 @@
             </select>
 
             <label for="username">User name</label>
-            <input type="text" id="username" >
+            <input type="text" id="username" class="input">
 
             <label for="password">Password</label>
-            <input type="text" id="password" >
+            <input type="text" id="password" class="input">
 
-            <input type="submit" value="Submit!">
+            <input type="submit" id="submit" value="Submit!" >
         </fieldset>
 
 
     </form>
 
 </body>
+<script src="jquery.js"></script>
+<script src="script.js"></script>
+
+
 </html>
